@@ -1,0 +1,8 @@
+cd /mnt/hdfs_nfs/user/auber/data_ple/
+scp PLEProject-0.0.1.jar yli:ClashCleaning.jar
+mvn compile && mvn package
+hdfs dfs -rm -r /user/yvillot/clean_test0  && yarn jar ClashCleaning.jar /user/auber/data_ple/clash2024.nljson /user/yvillot/clean_test0 
+
+
+
+
